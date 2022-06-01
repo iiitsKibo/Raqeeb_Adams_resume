@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: small;
+  line-height: 1.5;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .leftSide {
+  position: relative;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .rightSide {
+  color: whitesmoke;
+  position: relative;
+  background-color: #335088;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.profilePic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profileTxt {
+  font-size: medium;
+  font-weight: 100;
+}
+
+.profileTxt span {
+  font-size: small;
+}
+
+.profileDesc {
+  margin-bottom: 2rem;
+}
+.profileDesc h2 {
+  margin-bottom: 10px;
+}
+.box {
+  margin-bottom: 2.2rem;
+}
+
+.sectionWrapper h2 {
+  margin-bottom: 1rem;
+  border: 1px solid #335088;
+  padding: 1px;
+  background-color: #335088;
+  border-radius: 2%;
+  cursor: pointer;
+  text-align: center;
+  height: 2rem;
+  color: whitesmoke;
+}
+
+.sectionWrapper h2:hover {
+  background-color: #485d86;
+  border: 1px solid #485d86;
+}
+
+.employmentTxt h4 {
+  margin-bottom: 0.5rem;
+}
+
+.jobTitle {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.hiding {
+  display: none;
+}
+
+.personal ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ref {
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  color: whitesmoke;
+}
+
+.details p {
+  font-size: 11px;
+  line-height: 2;
+  font-family: "Poppins";
+}
+
+.skills .skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills h2 {
+  font-size: 13px;
+  line-height: 2;
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+}
+
+.skill h5 {
+  font-size: 11px;
+  line-height: 2;
+  font-family: "Poppins";
+  text-transform: uppercase;
+}
+
+.percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: whitesmoke;
+}
+
+.percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #0087ff;
+}
+.exp {
+  margin-left: 20px;
+}
+
+.qual {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container .rightSide {
+    gap: 2rem;
+  }
+}
